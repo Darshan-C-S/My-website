@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darshan C S - Portfolio</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(30px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Base styles and smooth scrolling */
+        html { scroll-behavior: smooth; }
+        body { 
+            background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+            min-height: 100vh;
+        }
+        
+        /* Animation delays for a cascading effect */
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+        .delay-300 { animation-delay: 300ms; }
+        .delay-400 { animation-delay: 400ms; }
+    </style>
+</head>
+<body class="text-gray-900 font-sans antialiased py-8 md:py-16 px-4">
+
+    <div class="max-w-4xl mx-auto">
+        
+        <header class="opacity-0 animate-fade-in-up bg-slate-900 text-white p-8 md:p-12 rounded-t-3xl shadow-2xl relative overflow-hidden group">
+            <div class="absolute -top-24 -right-24 w-64 h-64 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 group-hover:opacity-40 transition-opacity duration-700"></div>
+            
+            <div class="relative z-10">
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-3 bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-400">
+                    Darshan CS
+                </h1>
+                <p class="text-xl md:text-2xl text-blue-400 font-medium mb-6">Senior Backend Engineer <span class="text-slate-500">|</span> DevOps & AI-Native Systems</p>
+                <div class="flex flex-wrap gap-5 text-sm md:text-base text-slate-300">
+                    <a href="mailto:darshansri17@gmail.com" class="flex items-center gap-2 hover:text-blue-400 transition-colors duration-300">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        darshansri17@gmail.com
+                    </a>
+                    <span class="flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                        +91 9916470022
+                    </span>
+                    <a href="https://linkedin.com/in/darshancs17" target="_blank" class="hover:text-blue-400 transition-colors duration-300">LinkedIn</a>
+                    <a href="https://github.com/Darshan-C-S" target="_blank" class="hover:text-blue-400 transition-colors duration-300">GitHub</a>
+                </div>
+            </div>
+        </header>
+
+        <main class="bg-white/90 backdrop-blur-sm p-8 md:p-12 rounded-b-3xl shadow-2xl space-y-12">
+            
+            <section class="opacity-0 animate-fade-in-up delay-100">
+                <h2 class="text-2xl font-bold border-b-2 border-slate-100 pb-3 mb-5 text-slate-800 flex items-center gap-2">
+                    Professional Summary
+                </h2>
+                <p class="text-slate-600 leading-relaxed text-lg">
+                    Expert in bridging the gap between traditional Enterprise Java/Python backends, Cloud-native solutions and modern Generative and Agentic Al tools. Proven track record in designing Cloud Native solutions in AWS, LLM orchestrators, RAG architectures, and high-throughput microservices.
+                </p>
+            </section>
+
+            <section class="opacity-0 animate-fade-in-up delay-200">
+                <h2 class="text-2xl font-bold border-b-2 border-slate-100 pb-3 mb-5 text-slate-800">Core Expertise</h2>
+                <div class="flex flex-wrap gap-3">
+                    <span class="bg-white shadow-sm text-slate-700 px-4 py-2 rounded-lg text-sm font-semibold border border-slate-200 hover:border-blue-400 hover:text-blue-600 hover:-translate-y-1 hover:shadow-md transition-all duration-300 cursor-default">Java & Python</span>
+                    <span class="bg-white shadow-sm text-slate-700 px-4 py-2 rounded-lg text-sm font-semibold border border-slate-200 hover:border-blue-400 hover:text-blue-600 hover:-translate-y-1 hover:shadow-md transition-all duration-300 cursor-default">Spring Boot</span>
+                    <span class="bg-white shadow-sm text-slate-700 px-4 py-2 rounded-lg text-sm font-semibold border border-slate-200 hover:border-blue-400 hover:text-blue-600 hover:-translate-y-1 hover:shadow-md transition-all duration-300 cursor-default">AWS Cloud</span>
+                    <span class="bg-white shadow-sm text-slate-700 px-4 py-2 rounded-lg text-sm font-semibold border border-slate-200 hover:border-blue-400 hover:text-blue-600 hover:-translate-y-1 hover:shadow-md transition-all duration-300 cursor-default">Docker & Kubernetes</span>
+                    <span class="bg-white shadow-sm text-slate-700 px-4 py-2 rounded-lg text-sm font-semibold border border-slate-200 hover:border-blue-400 hover:text-blue-600 hover:-translate-y-1 hover:shadow-md transition-all duration-300 cursor-default">LLM Orchestration (LangChain)</span>
+                    <span class="bg-white shadow-sm text-slate-700 px-4 py-2 rounded-lg text-sm font-semibold border border-slate-200 hover:border-blue-400 hover:text-blue-600 hover:-translate-y-1 hover:shadow-md transition-all duration-300 cursor-default">RAG Architecture</span>
+                    <span class="bg-white shadow-sm text-slate-700 px-4 py-2 rounded-lg text-sm font-semibold border border-slate-200 hover:border-blue-400 hover:text-blue-600 hover:-translate-y-1 hover:shadow-md transition-all duration-300 cursor-default">Agentic Al tools</span>
+
+                </div>
+            </section>
+
+            <section class="opacity-0 animate-fade-in-up delay-300">
+                <h2 class="text-2xl font-bold border-b-2 border-slate-100 pb-3 mb-8 text-slate-800">Experience</h2>
+                
+                <div class="relative border-l-2 border-blue-100 pl-6 pb-8 group">
+                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-blue-500 ring-4 ring-white group-hover:scale-125 transition-transform duration-300"></div>
+                    
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-2">
+                        <h3 class="text-xl font-bold text-slate-900">Package App Development Senior Analyst</h3>
+                        <span class="inline-block bg-slate-100 text-slate-600 px-3 py-1 rounded-full text-xs font-bold tracking-wide mt-2 md:mt-0">Feb 2025 - Present</span>
+                    </div>
+                    <h4 class="text-lg text-blue-600 font-semibold mb-4">Accenture in India</h4>
+                    <ul class="space-y-3 text-slate-600 text-base">
+                        <li class="flex items-start">
+                            <span class="text-blue-400 mr-2 mt-1">▹</span>
+                            Designed and deployed scalable microservices for Project Bedrock's integration layer using Java Spring Boot and cloud-native architectures.
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-400 mr-2 mt-1">▹</span>
+                            Enabled seamless connectivity between CRM and billing systems, orchestrating ETL workflows and API gateway operations.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="relative border-l-2 border-blue-100 pl-6 group">
+                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-300 ring-4 ring-white group-hover:bg-blue-400 group-hover:scale-125 transition-all duration-300"></div>
+                    
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-2">
+                        <h3 class="text-xl font-bold text-slate-900">Software Engineer 1</h3>
+                        <span class="inline-block bg-slate-100 text-slate-600 px-3 py-1 rounded-full text-xs font-bold tracking-wide mt-2 md:mt-0">Dec 2022 - Jan 2025</span>
+                    </div>
+                    <h4 class="text-lg text-slate-700 font-semibold mb-4">Terralogic Inc.</h4>
+                    <ul class="space-y-3 text-slate-600 text-base">
+                        <li class="flex items-start">
+                            <span class="text-blue-400 mr-2 mt-1">▹</span>
+                            Developed scalable and distributed microservices and automation solutions for network infrastructure management, leveraging Java, Python, and modern DevOps tools.
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-400 mr-2 mt-1">▹</span>
+                            Enhanced application performance by 55% and reduced development time by 40% through optimised object-orientated design and system architecture.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darshan CS - Portfolio</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        /* Keep any custom CSS simple and minimal */
+        html { scroll-behavior: smooth; }
+        body { background-color: #f8fafc; }
+    </style>
+</head>
+<body class="text-gray-900 font-sans antialiased">
+
+    <div class="max-w-4xl mx-auto p-4 md:p-12">
+        
+        <header class="bg-slate-900 text-white p-8 md:p-10 rounded-t-2xl shadow-xl">
+            <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-2">Darshan C S</h1>
+            <p class="text-xl text-slate-300 mb-6">Senior Backend Engineer Java | DevOps & AI-Native Systems</p>
+            <div class="flex flex-wrap gap-4 text-sm text-slate-400">
+                <span>darshansri17@gmail.com</span>
+                <span>+91 9916470022</span>
+                <a href="https://linkedin.com/in/darshancs17" class="hover:text-white transition-colors">LinkedIn</a>
+                <a href="https://github.com/Darshan-C-S" class="hover:text-white transition-colors">GitHub</a>
+            </div>
+        </header>
+
+        <main class="bg-white p-8 md:p-10 rounded-b-2xl shadow-xl space-y-12">
+            
+            <section>
+                <h2 class="text-2xl font-semibold border-b border-gray-200 pb-2 mb-4 text-slate-800">Professional Summary</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    Expert in bridging the gap between traditional Enterprise Java/Python backends, Cloud-native solutions and modern Generative Al infrastructures. Proven track record in designing Cloud Native solutions in AWS, LLM orchestrators, RAG architectures, and high-throughput microservices.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-semibold border-b border-gray-200 pb-2 mb-4 text-slate-800">Core Skills</h2>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-md text-sm font-medium border border-slate-200">Java</span>
+                    <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-md text-sm font-medium border border-slate-200">Python</span>
+                    <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-md text-sm font-medium border border-slate-200">Spring Boot</span>
+                    <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-md text-sm font-medium border border-slate-200">AWS</span>
+                    <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-md text-sm font-medium border border-slate-200">Docker & Kubernetes</span>
+                    <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-md text-sm font-medium border border-slate-200">Agentic AI solutions</span>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-semibold border-b border-gray-200 pb-2 mb-6 text-slate-800">Experience</h2>
+                
+                <div class="mb-8">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-1">
+                        <h3 class="text-lg font-bold text-slate-900">Package App Development Senior Analyst</h3>
+                        <span class="text-sm font-semibold text-slate-500">Feb 2025 - Present</span>
+                    </div>
+                    <h4 class="text-md text-blue-600 font-medium mb-3">Accenture in India</h4>
+                    <ul class="list-disc pl-5 space-y-1 text-gray-700 text-sm">
+                        <li>Designed and deployed scalable microservices for Project Bedrock's integration layer using Java Spring Boot and cloud-native architectures.</li>
+                        <li>Enabled seamless connectivity between CRM and billing systems, orchestrating ETL workflows and API gateway operations.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-1">
+                        <h3 class="text-lg font-bold text-slate-900">Software Engineer 1</h3>
+                        <span class="text-sm font-semibold text-slate-500">Dec 2022 - Jan 2025</span>
+                    </div>
+                    <h4 class="text-md text-blue-600 font-medium mb-3">Terralogic Inc.</h4>
+                    <ul class="list-disc pl-5 space-y-1 text-gray-700 text-sm">
+                        <li>Developed scalable and distributed microservices and automation solutions for network infrastructure management, leveraging Java, Python, and modern DevOps tools.</li>
+                        <li>Enhanced application performance by 55% and reduced development time by 40% through optimised object-orientated design and system architecture.</li>
+                    </ul>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script>
+        console.log("Static Portfolio Loaded Successfully.");
+        // Future JS logic (like a simple light/dark mode toggle) can go here.
+    </script>
+</body>
+</html> -->
